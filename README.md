@@ -1,13 +1,540 @@
+![ChatGPT Image Jun 17, 2025, 06_34_58 PM](https://github.com/user-attachments/assets/7e6f25d6-214a-4be6-a2e9-22feda1d3e97)
+
+> Let's see how far I go
+
 ## Progress Dashboard
 
 | Category | Status | Completion | Modules |
 |----------|--------|------------|---------|
-| **Part I: The Art of Model Miniaturization** | Not Started | █░░░░░░░░░░░░░░░░░░░░░░░░ | 0 / 6 |
-| **Part II: The Science of Serving** | Not Started | ░░░░░░░░░░░░░░░░░░░░░░░░░ | 0 / 2 |
+| **Revisiting the Basics** | Started | █░░░░░░░░░░░░░░░░░░░░░░░░ | 0 / 10 |
+| **The Art of Model Miniaturization** | Not Started | ░░░░░░░░░░░░░░░░░░░░░░░░░ | 0 / 6 |
+| **The Science of Serving** | Not Started | ░░░░░░░░░░░░░░░░░░░░░░░░░ | 0 / 2 |
 | **Total Projects Completed** | Not Started | ░░░░░░░░░░░░░░░░░░░░░░░░░ | **0 / 8** |
 
+## Revisiting the Basics
 
-## Part I: The Art of Model Miniaturization
+Build rock-solid foundations by implementing core ML/DL concepts from first principles before diving into advanced optimization techniques.
+
+### Module 0.1: Core Machine Learning Fundamentals
+
+**Mathematical foundations and classical algorithms implemented from scratch**
+
+#### Core Concepts Checklist
+
+- [ ] **Linear Algebra Essentials:**
+  - [ ] Vector operations, dot products, norms, and orthogonality
+  - [ ] Matrix multiplication, transpose, inverse, and eigendecomposition
+  - [ ] Principal Component Analysis (PCA) for dimensionality reduction
+- [ ] **Probability and Statistics:**
+  - [ ] Bayes' theorem and conditional probability
+  - [ ] Maximum Likelihood Estimation (MLE) and Maximum A Posteriori (MAP)
+  - [ ] Gaussian distributions and Central Limit Theorem
+- [ ] **Optimization Fundamentals:**
+  - [ ] Gradient descent variants: batch, mini-batch, stochastic
+  - [ ] Learning rate scheduling and momentum
+  - [ ] Convex vs. non-convex optimization landscapes
+
+#### Knowledge Checks
+
+- [ ] **Exercise 1:** Implement PCA from scratch using eigendecomposition, apply to 2D dataset visualization
+- [ ] **Exercise 2:** Derive and implement gradient descent for linear regression with mathematical proof
+- [ ] **Exercise 3:** Code Naive Bayes classifier from scratch, compare with sklearn implementation
+- [ ] **Exercise 4:** Implement K-means clustering with different initialization strategies
+- [ ] **Exercise 5:** Build logistic regression with different regularization techniques (L1, L2, Elastic Net)
+
+#### Capstone Project: ML Algorithm Library
+
+- [ ] **Objective:** Create comprehensive ML library with 5+ algorithms implemented from mathematical foundations
+- [ ] **Step 1:** Implement Linear/Logistic Regression with gradient descent optimization
+- [ ] **Step 2:** Build K-Means and Gaussian Mixture Models for clustering
+- [ ] **Step 3:** Create Decision Tree with entropy/gini splitting criteria
+- [ ] **Step 4:** Implement Support Vector Machine with different kernels
+- [ ] **Step 5:** Add cross-validation and hyperparameter tuning utilities
+- [ ] **Step 6:** Benchmark against scikit-learn on standard datasets (Iris, Wine, Breast Cancer)
+- [ ] **Step 7:** Create comprehensive documentation with mathematical derivations
+
+---
+
+### Module 0.2: Deep Learning Foundations
+
+**Neural network fundamentals with manual backpropagation implementation**
+
+#### Core Concepts Checklist
+
+- [ ] **Neural Network Architecture:**
+  - [ ] Perceptron and Multi-Layer Perceptron (MLP) structure
+  - [ ] Activation functions: ReLU, Sigmoid, Tanh, Leaky ReLU, GELU
+  - [ ] Universal approximation theorem and representation power
+- [ ] **Backpropagation Algorithm:**
+  - [ ] Forward pass: input → hidden → output computation
+  - [ ] Backward pass: error propagation and gradient computation
+  - [ ] Chain rule application for multi-layer networks
+  - [ ] Weight update rules and parameter optimization
+- [ ] **Training Dynamics:**
+  - [ ] Loss functions: MSE, Cross-Entropy, Hinge Loss
+  - [ ] Batch normalization and layer normalization
+  - [ ] Dropout and other regularization techniques
+  - [ ] Gradient clipping and exploding/vanishing gradients
+
+#### Knowledge Checks
+
+- [ ] **Exercise 1:** Manually compute forward and backward pass for 2-layer network on XOR problem
+- [ ] **Exercise 2:** Implement different activation functions and analyze their gradient properties
+- [ ] **Exercise 3:** Code batch normalization from scratch and explain internal covariate shift
+- [ ] **Exercise 4:** Build dropout implementation and demonstrate regularization effect
+- [ ] **Exercise 5:** Compare different optimizers (SGD, Adam, RMSprop) on same network architecture
+
+#### Capstone Project: Neural Network Framework
+
+- [ ] **Objective:** Build mini deep learning framework supporting arbitrary network architectures
+- [ ] **Step 1:** Create base `Layer` class with forward/backward abstract methods
+- [ ] **Step 2:** Implement `LinearLayer`, `ActivationLayer`, `DropoutLayer`, `BatchNormLayer`
+- [ ] **Step 3:** Build `Network` class for layer composition and training loops
+- [ ] **Step 4:** Add different optimizers (SGD, Adam) and loss functions
+- [ ] **Step 5:** Test on MNIST digit classification with 3+ layer architectures
+- [ ] **Step 6:** Compare performance with PyTorch equivalent implementation
+- [ ] **Step 7:** Add learning curves visualization and hyperparameter sensitivity analysis
+
+---
+
+### Module 0.3: Convolutional Neural Networks (CNNs)
+
+**Computer vision architectures and spatial feature learning**
+
+#### Core Concepts Checklist
+
+- [ ] **Convolution Operation:**
+  - [ ] 2D convolution mechanics: kernels, stride, padding, dilation
+  - [ ] Feature map computation and spatial dimension calculations
+  - [ ] Convolution vs. correlation mathematical distinction
+- [ ] **CNN Architecture Components:**
+  - [ ] Convolutional layers and learnable filter banks
+  - [ ] Pooling layers: Max, Average, Global Average Pooling
+  - [ ] Fully connected layers for classification heads
+- [ ] **Classic CNN Architectures:**
+  - [ ] **LeNet-5:** MNIST handwritten digit recognition pioneer
+  - [ ] **AlexNet:** ImageNet breakthrough with ReLU and dropout
+  - [ ] **VGG:** Deep networks with small 3x3 filters
+  - [ ] **ResNet:** Skip connections solving vanishing gradient problem
+- [ ] **Advanced CNN Concepts:**
+  - [ ] Receptive field calculation and effective receptive field
+  - [ ] Depthwise separable convolutions (MobileNet inspiration)
+  - [ ] Dilated/Atrous convolutions for dense prediction tasks
+
+#### Knowledge Checks
+
+- [ ] **Exercise 1:** Implement 2D convolution from scratch with different padding/stride configurations
+- [ ] **Exercise 2:** Calculate receptive field for 5-layer CNN with given kernel sizes and strides
+- [ ] **Exercise 3:** Implement max pooling and average pooling operations manually
+- [ ] **Exercise 4:** Code basic ResNet block with skip connection and analyze gradient flow
+- [ ] **Exercise 5:** Build depthwise separable convolution and compare parameter count with standard conv
+
+#### Capstone Project: CNN Architecture Zoo
+
+- [ ] **Objective:** Implement and compare classic CNN architectures on CIFAR-10 dataset
+- [ ] **Step 1:** Build LeNet-5 architecture and train on CIFAR-10 (baseline)
+- [ ] **Step 2:** Implement AlexNet-style architecture with ReLU, dropout, and data augmentation
+- [ ] **Step 3:** Create VGG-like network with deep small-filter design
+- [ ] **Step 4:** Build ResNet-18 with proper skip connections and batch normalization
+- [ ] **Step 5:** Train all architectures with identical hyperparameters and data preprocessing
+- [ ] **Step 6:** Compare accuracy, parameter count, training time, and convergence curves
+- [ ] **Step 7:** Analyze learned filters and feature maps using visualization techniques
+
+---
+
+### Module 0.4: Recurrent Neural Networks and Sequence Modeling
+
+**Temporal pattern recognition and sequence-to-sequence learning**
+
+#### Core Concepts Checklist
+
+- [ ] **RNN Fundamentals:**
+  - [ ] Vanilla RNN architecture and hidden state computation
+  - [ ] Backpropagation Through Time (BPTT) algorithm
+  - [ ] Vanishing gradient problem in long sequences
+- [ ] **Advanced RNN Architectures:**
+  - [ ] **LSTM:** Long Short-Term Memory with gating mechanisms
+  - [ ] **GRU:** Gated Recurrent Unit as simplified LSTM alternative
+  - [ ] Bidirectional RNNs for utilizing future context
+- [ ] **Sequence Learning Tasks:**
+  - [ ] **Many-to-One:** Sequence classification (sentiment analysis)
+  - [ ] **One-to-Many:** Sequence generation (image captioning)
+  - [ ] **Many-to-Many:** Sequence-to-sequence (machine translation)
+- [ ] **Attention Mechanism:**
+  - [ ] Motivation: fixed-size bottleneck problem in encoder-decoder
+  - [ ] Attention weights computation and context vector creation
+  - [ ] Different attention variants: additive, multiplicative, self-attention
+
+#### Knowledge Checks
+
+- [ ] **Exercise 1:** Implement vanilla RNN from scratch and demonstrate BPTT on simple sequence task
+- [ ] **Exercise 2:** Build LSTM cell with forget, input, and output gates step-by-step
+- [ ] **Exercise 3:** Code GRU architecture and compare parameter efficiency with LSTM
+- [ ] **Exercise 4:** Implement basic attention mechanism for sequence-to-sequence model
+- [ ] **Exercise 5:** Compare RNN variants on sequence length sensitivity using synthetic data
+
+#### Capstone Project: Language Modeling with RNNs
+
+- [ ] **Objective:** Build character-level language model using different RNN architectures
+- [ ] **Step 1:** Prepare character-level dataset from text corpus (Shakespeare, Wikipedia)
+- [ ] **Step 2:** Implement vanilla RNN for character prediction with teacher forcing
+- [ ] **Step 3:** Build LSTM-based language model with same architecture size
+- [ ] **Step 4:** Create GRU variant and attention-enhanced LSTM model
+- [ ] **Step 5:** Train all models with identical hyperparameters and sequence lengths
+- [ ] **Step 6:** Evaluate perplexity and generate sample text from each model
+- [ ] **Step 7:** Compare training stability, convergence speed, and generation quality
+
+---
+
+### Module 0.5: Transformer Architecture Deep Dive
+
+**Attention mechanisms and the foundation of modern language models**
+
+#### Core Concepts Checklist
+
+- [ ] **Self-Attention Mechanism:**
+  - [ ] Query, Key, Value matrices and their roles
+  - [ ] Scaled dot-product attention computation
+  - [ ] Attention matrix interpretation and visualization
+- [ ] **Multi-Head Attention:**
+  - [ ] Parallel attention heads with different learned representations
+  - [ ] Head concatenation and output projection
+  - [ ] Relationship to ensemble methods and representational diversity
+- [ ] **Transformer Block Components:**
+  - [ ] **Layer Normalization:** Pre-norm vs. post-norm configurations
+  - [ ] **Position-wise Feed-Forward Networks:** Two-layer MLP with ReLU/GELU
+  - [ ] **Residual Connections:** Skip connections around attention and FFN
+- [ ] **Positional Encoding:**
+  - [ ] Sinusoidal encoding for absolute positions
+  - [ ] Learned positional embeddings
+  - [ ] Relative position encoding variants
+- [ ] **Encoder vs. Decoder Architecture:**
+  - [ ] **Encoder-only:** BERT-style bidirectional models
+  - [ ] **Decoder-only:** GPT-style autoregressive models
+  - [ ] **Encoder-Decoder:** T5-style sequence-to-sequence models
+
+#### Knowledge Checks
+
+- [ ] **Exercise 1:** Implement scaled dot-product attention from scratch with proper masking
+- [ ] **Exercise 2:** Build multi-head attention mechanism and visualize attention patterns
+- [ ] **Exercise 3:** Code sinusoidal positional encoding and compare with learned embeddings
+- [ ] **Exercise 4:** Implement complete transformer block with layer norm and residual connections
+- [ ] **Exercise 5:** Compare causal (decoder) vs. bidirectional (encoder) attention masks
+
+#### Capstone Project: Transformer Variants Implementation
+
+- [ ] **Objective:** Build three transformer variants and compare on language understanding tasks
+- [ ] **Step 1:** Implement encoder-only transformer (BERT-style) for sequence classification
+- [ ] **Step 2:** Build decoder-only transformer (GPT-style) for language generation
+- [ ] **Step 3:** Create encoder-decoder transformer for sequence-to-sequence tasks
+- [ ] **Step 4:** Train encoder-only model on sentiment analysis (IMDB, SST-2)
+- [ ] **Step 5:** Train decoder-only model on character-level language modeling
+- [ ] **Step 6:** Train encoder-decoder model on simple translation task
+- [ ] **Step 7:** Analyze attention patterns, compare parameter efficiency, and evaluate task performance
+
+---
+
+### Module 0.6: Advanced Deep Learning Concepts
+
+**Modern techniques essential for contemporary deep learning practice**
+
+#### Core Concepts Checklist
+
+- [ ] **Normalization Techniques:**
+  - [ ] **Batch Normalization:** Training vs. inference mode differences
+  - [ ] **Layer Normalization:** Per-sample normalization for variable-length sequences
+  - [ ] **Group Normalization:** Channel grouping for small batch sizes
+  - [ ] **Instance Normalization:** Per-channel normalization for style transfer
+- [ ] **Advanced Optimizers:**
+  - [ ] **Adam:** Adaptive moment estimation with bias correction
+  - [ ] **AdamW:** Weight decay vs. L2 regularization distinction
+  - [ ] **Learning Rate Scheduling:** Cosine annealing, warm restarts, polynomial decay
+- [ ] **Regularization Strategies:**
+  - [ ] **Dropout variants:** Standard, DropConnect, Scheduled DropPath
+  - [ ] **Data Augmentation:** Geometric, color, mixup, cutmix techniques
+  - [ ] **Weight regularization:** L1, L2, and elastic net penalties
+- [ ] **Loss Function Design:**
+  - [ ] **Classification:** Cross-entropy, focal loss, label smoothing
+  - [ ] **Regression:** MSE, MAE, Huber loss robustness properties
+  - [ ] **Contrastive Learning:** InfoNCE, triplet loss, margin-based losses
+
+#### Knowledge Checks
+
+- [ ] **Exercise 1:** Implement all normalization techniques and compare training dynamics
+- [ ] **Exercise 2:** Code Adam optimizer from scratch with proper bias correction
+- [ ] **Exercise 3:** Build learning rate scheduler with cosine annealing and warm restarts
+- [ ] **Exercise 4:** Implement focal loss and demonstrate class imbalance handling
+- [ ] **Exercise 5:** Create mixup data augmentation and analyze regularization effects
+
+#### Capstone Project: Training Optimization Laboratory
+
+- [ ] **Objective:** Systematically study training optimization techniques on vision classification
+- [ ] **Step 1:** Define baseline CNN architecture and CIFAR-10 training setup
+- [ ] **Step 2:** Compare normalization techniques (Batch, Layer, Group) on same architecture
+- [ ] **Step 3:** Evaluate optimizers (SGD, Adam, AdamW) with different learning rate schedules
+- [ ] **Step 4:** Test regularization combinations (dropout, weight decay, data augmentation)
+- [ ] **Step 5:** Implement advanced techniques (label smoothing, mixup, cutmix)
+- [ ] **Step 6:** Create comprehensive comparison with statistical significance testing
+- [ ] **Step 7:** Document best practices and optimization recipe for reproducible results
+
+---
+
+### Module 0.7: Implementing GPT from Scratch (Andrej Karpathy Neural Networks: Zero to Hero Series)
+
+**Complete implementation journey following the legendary tutorial series**
+
+#### Core Concepts Checklist
+
+- [ ] **Lecture 1: The spelled-out intro to neural networks and backpropagation: building micrograd**
+  - [ ] Automatic differentiation and computational graphs
+  - [ ] Building backpropagation engine from scratch
+  - [ ] Value class with gradient tracking and chain rule implementation
+- [ ] **Lecture 2: The spelled-out intro to language modeling: building makemore**
+  - [ ] Character-level language modeling fundamentals
+  - [ ] N-gram models and their limitations
+  - [ ] Transition to neural language models
+- [ ] **Lecture 3: Building makemore Part 2: MLP**
+  - [ ] Multi-layer perceptron for character prediction
+  - [ ] Embedding layers and distributed representations
+  - [ ] Training dynamics and hyperparameter sensitivity
+- [ ] **Lecture 4: Building makemore Part 3: Activations & Gradients, BatchNorm**
+  - [ ] Activation function analysis and gradient flow
+  - [ ] Batch normalization implementation and benefits
+  - [ ] Initialization strategies (Xavier, He, etc.)
+- [ ] **Lecture 5: Building makemore Part 4: Becoming a Backprop Ninja**
+  - [ ] Manual backpropagation through complex operations
+  - [ ] Debugging gradient computation and numerical verification
+  - [ ] Cross-entropy loss derivation and implementation
+- [ ] **Lecture 6: Building makemore Part 5: Building a WaveNet**
+  - [ ] Dilated causal convolutions for sequence modeling
+  - [ ] Hierarchical feature learning in WaveNet architecture
+  - [ ] Comparison with RNN-based approaches
+- [ ] **Lecture 7: Let's build GPT: from scratch, in code, spelled out**
+  - [ ] Transformer decoder architecture implementation
+  - [ ] Self-attention mechanism with causal masking
+  - [ ] Position embeddings and layer stacking
+- [ ] **Lecture 8: Let's build the GPT Tokenizer**
+  - [ ] Byte Pair Encoding (BPE) algorithm implementation
+  - [ ] Tokenization strategies and vocabulary construction
+  - [ ] Handling out-of-vocabulary tokens and special symbols
+- [ ] **Lecture 9: Let's reproduce GPT-2 (124M)**
+  - [ ] Exact GPT-2 architecture replication
+  - [ ] Loading pre-trained weights and verification
+  - [ ] Training from scratch vs. fine-tuning strategies
+- [ ] **Lecture 10: Let's build the GPT Tokenizer**
+  - [ ] Advanced tokenization techniques
+  - [ ] SentencePiece and other modern tokenizers
+  - [ ] Tokenization's impact on model performance
+
+#### Implementation Milestones
+
+- [ ] **Milestone 1: Micrograd Engine**
+  - [ ] Complete automatic differentiation system
+  - [ ] Multi-layer neural network training capability
+  - [ ] Gradient checking and numerical verification
+- [ ] **Milestone 2: Character-Level Models**
+  - [ ] N-gram baseline implementation
+  - [ ] MLP-based character prediction model
+  - [ ] Training loop with proper evaluation metrics
+- [ ] **Milestone 3: Advanced Training Techniques**
+  - [ ] Batch normalization from scratch
+  - [ ] Multiple initialization strategies
+  - [ ] Learning rate scheduling and optimization
+- [ ] **Milestone 4: Sequence Models**
+  - [ ] WaveNet-style dilated convolutions
+  - [ ] Causal masking and autoregressive generation
+  - [ ] Comparison with simpler baseline models
+- [ ] **Milestone 5: Transformer Implementation**
+  - [ ] Complete self-attention mechanism
+  - [ ] Multi-head attention and layer normalization
+  - [ ] Position embeddings and transformer blocks
+- [ ] **Milestone 6: Tokenization System**
+  - [ ] BPE algorithm from scratch
+  - [ ] Vocabulary building and encoding/decoding
+  - [ ] Integration with transformer model
+- [ ] **Milestone 7: GPT-2 Reproduction**
+  - [ ] Exact architecture matching
+  - [ ] Weight loading and inference verification
+  - [ ] Training stability and convergence analysis
+
+#### Knowledge Checks
+
+- [ ] **Check 1:** Verify micrograd gradients match PyTorch autograd on complex expressions
+- [ ] **Check 2:** Achieve target perplexity on character-level modeling tasks
+- [ ] **Check 3:** Demonstrate batch normalization's training stabilization effects
+- [ ] **Check 4:** Show WaveNet's superior modeling of long-range dependencies
+- [ ] **Check 5:** Visualize and interpret transformer attention patterns
+- [ ] **Check 6:** Build working tokenizer that handles diverse text inputs
+- [ ] **Check 7:** Generate coherent text samples from trained GPT model
+
+#### Capstone Project: Complete GPT Implementation and Training
+
+- [ ] **Objective:** Build production-ready GPT implementation with full training pipeline
+- [ ] **Phase 1: Foundation (Lectures 1-3)**
+  - [ ] Implement micrograd with comprehensive test suite
+  - [ ] Build character-level MLP with proper evaluation
+  - [ ] Create modular codebase for easy experimentation
+- [ ] **Phase 2: Advanced Training (Lectures 4-6)**
+  - [ ] Add batch normalization and initialization strategies
+  - [ ] Implement WaveNet architecture for sequence modeling
+  - [ ] Compare different architectural choices systematically
+- [ ] **Phase 3: Transformer Core (Lectures 7-8)**
+  - [ ] Complete transformer decoder implementation
+  - [ ] Build robust tokenization system with BPE
+  - [ ] Create text generation interface with sampling strategies
+- [ ] **Phase 4: Scale and Reproduce (Lectures 9-10)**
+  - [ ] Implement GPT-2 (124M) architecture exactly
+  - [ ] Load and verify pre-trained weights
+  - [ ] Train smaller model from scratch on custom dataset
+- [ ] **Phase 5: Analysis and Documentation**
+  - [ ] Compare all implemented models on common benchmarks
+  - [ ] Create comprehensive documentation with mathematical derivations
+  - [ ] Build interactive demo showcasing different model capabilities
+
+---
+
+### Module 0.8: PyTorch Mastery and Best Practices
+
+**Advanced PyTorch techniques for efficient deep learning development**
+
+#### Core Concepts Checklist
+
+- [ ] **Advanced PyTorch Features:**
+  - [ ] **Custom Datasets and DataLoaders:** Efficient data pipeline creation
+  - [ ] **Model Checkpointing:** State preservation and resumable training
+  - [ ] **Mixed Precision Training:** FP16/BF16 for memory and speed optimization
+  - [ ] **Distributed Training:** Multi-GPU and multi-node parallelism
+- [ ] **Model Architecture Patterns:**
+  - [ ] **nn.Module Subclassing:** Clean architecture definition
+  - [ ] **Forward Hooks:** Intermediate feature extraction and analysis
+  - [ ] **Parameter Groups:** Different learning rates for different layers
+  - [ ] **Model Surgery:** Layer freezing, replacement, and fine-tuning
+- [ ] **Training Loop Engineering:**
+  - [ ] **Gradient Accumulation:** Effective batch size scaling
+  - [ ] **Learning Rate Scheduling:** Cosine annealing, step decay, plateau reduction
+  - [ ] **Early Stopping:** Overfitting prevention and training efficiency
+  - [ ] **Metrics Tracking:** Comprehensive logging and visualization
+- [ ] **Memory and Performance Optimization:**
+  - [ ] **torch.compile:** JIT compilation for faster execution
+  - [ ] **Gradient Checkpointing:** Trading compute for memory
+  - [ ] **DataLoader Optimization:** num_workers, pin_memory, prefetch_factor tuning
+  - [ ] **CUDA Optimization:** Device placement and tensor operations
+
+#### Knowledge Checks
+
+- [ ] **Exercise 1:** Create custom dataset class with proper transforms and lazy loading
+- [ ] **Exercise 2:** Implement model checkpointing with optimizer state and resume capability
+- [ ] **Exercise 3:** Set up mixed precision training with automatic loss scaling
+- [ ] **Exercise 4:** Build flexible training loop with multiple metrics and early stopping
+- [ ] **Exercise 5:** Optimize DataLoader performance and measure throughput improvements
+
+#### Capstone Project: Production-Ready Training Framework
+
+- [ ] **Objective:** Build comprehensive PyTorch training framework with modern best practices
+- [ ] **Step 1:** Create modular dataset classes supporting multiple data formats
+- [ ] **Step 2:** Implement flexible model factory with configuration-driven architecture
+- [ ] **Step 3:** Build advanced training loop with all optimization techniques
+- [ ] **Step 4:** Add comprehensive logging, checkpointing, and visualization
+- [ ] **Step 5:** Implement distributed training support with proper synchronization
+- [ ] **Step 6:** Create configuration system for reproducible experiments
+- [ ] **Step 7:** Test framework on multiple tasks (classification, generation, regression)
+
+---
+
+### Module 0.9: Mathematical Deep Learning Theory
+
+**Theoretical foundations underlying deep learning success**
+
+#### Core Concepts Checklist
+
+- [ ] **Universal Approximation Theory:**
+  - [ ] Theoretical guarantees for neural network expressivity
+  - [ ] Width vs. depth trade-offs in approximation power
+  - [ ] Practical implications for architecture design
+- [ ] **Optimization Landscape Analysis:**
+  - [ ] Loss surface geometry and critical points
+  - [ ] Saddle points vs. local minima in high dimensions
+  - [ ] Lottery ticket hypothesis and network pruning theory
+- [ ] **Generalization Theory:**
+  - [ ] PAC-Bayes bounds and generalization guarantees
+  - [ ] Rademacher complexity and uniform convergence
+  - [ ] Double descent phenomenon and overparameterization benefits
+- [ ] **Information Theory Perspectives:**
+  - [ ] Information bottleneck principle in deep networks
+  - [ ] Mutual information and representation learning
+  - [ ] Compression and prediction trade-offs
+
+#### Knowledge Checks
+
+- [ ] **Exercise 1:** Prove universal approximation theorem for single hidden layer networks
+- [ ] **Exercise 2:** Analyze loss landscape properties using Hessian eigenvalue analysis
+- [ ] **Exercise 3:** Compute generalization bounds for specific network architectures
+- [ ] **Exercise 4:** Implement information bottleneck analysis for trained networks
+- [ ] **Exercise 5:** Demonstrate double descent with systematic overparameterization experiments
+
+#### Capstone Project: Theoretical Analysis of Deep Networks
+
+- [ ] **Objective:** Comprehensive theoretical analysis of neural network behavior
+- [ ] **Step 1:** Implement tools for loss landscape visualization and analysis
+- [ ] **Step 2:** Study generalization behavior across different model sizes
+- [ ] **Step 3:** Analyze information flow through network layers during training
+- [ ] **Step 4:** Compare theoretical predictions with empirical observations
+- [ ] **Step 5:** Create visual demonstrations of key theoretical concepts
+- [ ] **Step 6:** Write comprehensive report connecting theory to practice
+
+---
+
+### Module 0.10: Research Paper Implementation Marathon
+
+**Implementing foundational papers to understand algorithmic innovations**
+
+#### Core Papers to Implement
+
+- [ ] **ResNet (He et al., 2015):** "Deep Residual Learning for Image Recognition"
+  - [ ] Identity mapping implementation and gradient flow analysis
+  - [ ] Comparison with plain networks and vanishing gradient demonstration
+- [ ] **Attention Is All You Need (Vaswani et al., 2017):** Original Transformer paper
+  - [ ] Complete encoder-decoder architecture from paper specifications
+  - [ ] Multi-head attention and position encoding implementation
+- [ ] **BERT (Devlin et al., 2018):** "BERT: Pre-training of Deep Bidirectional Transformers"
+  - [ ] Masked language modeling and next sentence prediction objectives
+  - [ ] Bidirectional attention mechanism and fine-tuning procedures
+- [ ] **GPT (Radford et al., 2018):** "Improving Language Understanding by Generative Pre-Training"
+  - [ ] Autoregressive language modeling with transformer decoder
+  - [ ] Unsupervised pre-training and supervised fine-tuning pipeline
+- [ ] **Adam (Kingma & Ba, 2014):** "Adam: A Method for Stochastic Optimization"
+  - [ ] Adaptive moment estimation with bias correction
+  - [ ] Comparison with SGD and other optimizers on multiple tasks
+
+#### Implementation Standards
+
+- [ ] **Paper Fidelity:** Match exact architectures, hyperparameters, and training procedures
+- [ ] **Reproducibility:** Achieve reported performance within reasonable variance
+- [ ] **Code Quality:** Clean, documented, and modular implementations
+- [ ] **Analysis:** Detailed comparison with paper claims and ablation studies
+
+#### Knowledge Checks
+
+- [ ] **Check 1:** ResNet implementation matches paper architecture and achieves target accuracy
+- [ ] **Check 2:** Transformer implementation successfully trains on machine translation task
+- [ ] **Check 3:** BERT implementation achieves reasonable performance on GLUE tasks
+- [ ] **Check 4:** GPT implementation generates coherent text and achieves target perplexity
+- [ ] **Check 5:** Adam optimizer implementation matches theoretical algorithm exactly
+
+#### Capstone Project: Paper Implementation Portfolio
+
+- [ ] **Objective:** Create comprehensive portfolio of influential paper implementations
+- [ ] **Step 1:** Select 5 foundational papers across different domains (vision, NLP, optimization)
+- [ ] **Step 2:** Implement each paper with meticulous attention to detail
+- [ ] **Step 3:** Reproduce key results and verify against paper claims
+- [ ] **Step 4:** Create detailed analysis comparing implementations and identifying insights
+- [ ] **Step 5:** Build interactive demos showcasing each implementation
+- [ ] **Step 6:** Write technical blog posts explaining implementation challenges and solutions
+- [ ] **Step 7:** Open-source implementations with comprehensive documentation and tutorials
+
+---
+
+## The Art of Model Miniaturization
 
 Master the techniques that make models smaller, faster, and more efficient by transforming the model itself.
 
@@ -278,7 +805,7 @@ Master the techniques that make models smaller, faster, and more efficient by tr
 
 ---
 
-## Part II: The Science of Serving
+## The Science of Serving
 
 Transition from model optimization to the complex systems that serve models efficiently at scale.
 
